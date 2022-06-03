@@ -1,0 +1,57 @@
+## Introdução ao Python:
+
+ # Strings:
+type - tipo;
+len - comprimento;
+[N] - o 'N+1' caracter;
+[-N] - o 'N' caracter de trás para frente;
+[:] - index completa (do início ao fim);
+[:N] - os 'N' primeiros caracteres
+[N:] - do caracter "N+1" até o último;
+[:-N] - todo o intervalo, sem os 'N' últimos caracteres;
+[-N:] - os últimos 'N' caracteres;
+[::-N] - de trás para frente, de '-N' em '-N';
+[-N::] - os últimos 'N' caracteres (=[-N:]);
+[N::] - o intervalo sem os 'N' primeiros caracteres;
+[::N] - o intervalo de 'N' em 'N';
+[N:-X] - sem os 'N' primeiros e sem os 'X' últimos caracteres;
+[N:X] - do 'N+1' ao 'X' primeiros caracteres.
+
+Observação:
+* Se o segundo parâmetro tiver posição menor que o primeiro -> retorna vazio ('');
+* Strings são imutáveis -> Não aceita substituição de valores.
+
+.lower() - toda a str fica minúscula;
+.upper() - toda a str fica maiúscula;
+.split() - separa a str por palavras;
+.split(N) - cria lista a partir da str, usando como divisor o caracter 'N', retirando-os;
+
+ # Listas / (list = []):
+.append() - Adiciona elementos à lista;
+.pop() - retira o último item da lista;
+.sort() - classifica em ordem crescente/alfabética;
+.reverse() - classifica em ordem decrescente/alfabética invertida;
+
+ # Dicionários / (dict = {}):
+
+.keys() - retorna as chaves contidas no dicionário;
+.values() - retorna os valores contidos no dicionário;
+.items() - retorna os pares(chaves, valores) contidos no dicionário;
+
+Observação:
+* As indexações são feitas pelas chaves, não pelos índices.
+
+ # Tuplas / (tp = ()):
+.index(N) - retorna a primeira posição do N (caso ele seja repetido);
+.count(N) - conta a quantidade de N presente na tupla;
+
+Observação:
+* São imutáveis.
+
+ # Conjuntos / (set()):
+.add() - adiciona um novo item;
+
+Observação:
+*Adicionar vários itens iguais -> ele só adiciona 1. Não repete.
+*Não indexa, nem fatia;
+
